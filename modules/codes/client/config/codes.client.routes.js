@@ -10,7 +10,7 @@
             template: '<ui-view/>'
         }).state('codes.list', {
             url: '',
-            templateUrl: 'modules/codes/client/views/list-codes.client.view.html',
+            templateUrl: 'modules/codes/views/list-codes.client.view.html',
             controller: 'CodesListController',
             controllerAs: 'vm',
             data: {
@@ -18,7 +18,7 @@
             }
         }).state('codes.create', {
             url: '/create',
-            templateUrl: 'modules/codes/client/views/form-code.client.view.html',
+            templateUrl: 'modules/codes/views/form-code.client.view.html',
             controller: 'CodesController',
             controllerAs: 'vm',
             resolve: {
@@ -30,7 +30,7 @@
             }
         }).state('codes.edit', {
             url: '/:codeId/edit',
-            templateUrl: 'modules/codes/client/views/form-code.client.view.html',
+            templateUrl: 'modules/codes/views/form-code.client.view.html',
             controller: 'CodesController',
             controllerAs: 'vm',
             resolve: {
@@ -42,7 +42,7 @@
             }
         }).state('codes.view', {
             url: '/:codeId',
-            templateUrl: 'modules/codes/client/views/view-code.client.view.html',
+            templateUrl: 'modules/codes/views/view-code.client.view.html',
             controller: 'CodesController',
             controllerAs: 'vm',
             resolve: {
